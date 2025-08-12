@@ -1,0 +1,690 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product List - Exclusive</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Summer Sale Banner -->
+    <div class="summer-sale-banner">
+        <div class="container">
+            <p>🎉 Summer Sale For All Swim Suits And Free Express Delivery - OFF 50%! <a href="#" class="shop-now-link">Shop Now</a></p>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <h1>Exclusive</h1>
+                </div>
+                <nav class="nav-menu">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="#" class="active">Products</a></li>
+                        <li><a href="#">Categories</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </nav>
+                <div class="header-actions">
+                    <div class="search-container">
+                        <input type="text" placeholder="What are you looking for?" class="search-input">
+                        <button class="search-btn">
+                            <i class="fas fa-search"></i>
+                        </button>
+                    </div>
+                    <button class="wishlist-btn">
+                        <i class="fas fa-heart"></i>
+                        <span class="wishlist-count">0</span>
+                    </button>
+                    <button class="cart-btn">
+                        <i class="fas fa-shopping-cart"></i>
+                        <span class="cart-count">0</span>
+                    </button>
+                    <button class="user-btn">
+                        <i class="fas fa-user"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Breadcrumb -->
+    <section class="breadcrumb-section">
+        <div class="container">
+            <div class="breadcrumb-header">
+                <a href="index.html" class="back-to-home">
+                    <i class="fas fa-arrow-left"></i>
+                    Back to Home
+                </a>
+                <nav class="breadcrumb-nav">
+                    <a href="index.html">Home</a>
+                    <span class="separator">/</span>
+                    <span class="current">All Products</span>
+                </nav>
+            </div>
+        </div>
+    </section>
+
+    <!-- Product List Section -->
+    <section class="product-list-section">
+        <div class="container">
+            <div class="product-list-content">
+                <!-- Filters Sidebar -->
+                <aside class="filters-sidebar">
+                    <div class="filter-group">
+                        <h3>Categories</h3>
+                        <div class="filter-options">
+                            <label class="filter-option">
+                                <input type="checkbox" value="electronics" checked>
+                                <span>Electronics</span>
+                            </label>
+                            <label class="filter-option">
+                                <input type="checkbox" value="clothing">
+                                <span>Clothing</span>
+                            </label>
+                            <label class="filter-option">
+                                <input type="checkbox" value="gaming">
+                                <span>Gaming</span>
+                            </label>
+                            <label class="filter-option">
+                                <input type="checkbox" value="accessories">
+                                <span>Accessories</span>
+                            </label>
+                            <label class="filter-option">
+                                <input type="checkbox" value="pet">
+                                <span>Pet Supplies</span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="filter-group">
+                        <h3>Price Range</h3>
+                        <div class="price-range">
+                            <input type="range" id="price-range" min="0" max="500" value="500" class="price-slider">
+                            <div class="price-values">
+                                <span>$0</span>
+                                <span id="price-value">$500</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="filter-group">
+                        <h3>Rating</h3>
+                        <div class="filter-options">
+                            <label class="filter-option">
+                                <input type="checkbox" value="5">
+                                <span>⭐⭐⭐⭐⭐ (5)</span>
+                            </label>
+                            <label class="filter-option">
+                                <input type="checkbox" value="4">
+                                <span>⭐⭐⭐⭐ (4+)</span>
+                            </label>
+                            <label class="filter-option">
+                                <input type="checkbox" value="3">
+                                <span>⭐⭐⭐ (3+)</span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="filter-group">
+                        <h3>Availability</h3>
+                        <div class="filter-options">
+                            <label class="filter-option">
+                                <input type="checkbox" value="in-stock" checked>
+                                <span>In Stock</span>
+                            </label>
+                            <label class="filter-option">
+                                <input type="checkbox" value="on-sale">
+                                <span>On Sale</span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <button class="clear-filters-btn">Clear All Filters</button>
+                </aside>
+
+                <!-- Products Main Area -->
+                <main class="products-main">
+                    <!-- Products Header -->
+                    <div class="products-header">
+                        <div class="results-info">
+                            <span id="results-count">8</span> Products Found
+                        </div>
+                        <div class="products-controls">
+                            <div class="view-toggle">
+                                <button class="view-btn active" data-view="grid">
+                                    <i class="fas fa-th"></i>
+                                </button>
+                                <button class="view-btn" data-view="list">
+                                    <i class="fas fa-list"></i>
+                                </button>
+                            </div>
+                            <div class="sort-controls">
+                                <label for="sort-select">Sort by:</label>
+                                <select id="sort-select" class="sort-select">
+                                    <option value="featured">Featured</option>
+                                    <option value="price-low">Price: Low to High</option>
+                                    <option value="price-high">Price: High to Low</option>
+                                    <option value="rating">Highest Rated</option>
+                                    <option value="newest">Newest</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Products Grid -->
+                    <div class="products-grid" id="products-container">
+                        <!-- Product cards will be dynamically loaded here -->
+                    </div>
+
+                    <!-- Pagination -->
+                    <div class="pagination">
+                        <button class="pagination-btn prev" disabled>
+                            <i class="fas fa-chevron-left"></i>
+                            Previous
+                        </button>
+                        <div class="pagination-numbers">
+                            <button class="pagination-btn active">1</button>
+                            <button class="pagination-btn">2</button>
+                            <button class="pagination-btn">3</button>
+                            <span class="pagination-dots">...</span>
+                            <button class="pagination-btn">8</button>
+                        </div>
+                        <button class="pagination-btn next">
+                            Next
+                            <i class="fas fa-chevron-right"></i>
+                        </button>
+                    </div>
+                </main>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features-section">
+        <div class="container">
+            <div class="features-grid">
+                <div class="feature">
+                    <div class="feature-icon">
+                        <img src="images/Icon-Customer service.svg" alt="Customer Service">
+                    </div>
+                    <div class="feature-content">
+                        <h3>24/7 Customer Support</h3>
+                        <p>Get help anytime, anywhere with our round-the-clock customer support team.</p>
+                    </div>
+                </div>
+                <div class="feature">
+                    <div class="feature-icon">
+                        <img src="images/Icon-return.svg" alt="Free Returns">
+                    </div>
+                    <div class="feature-content">
+                        <h3>Free Returns</h3>
+                        <p>Not satisfied? Return your purchase within 30 days for a full refund.</p>
+                    </div>
+                </div>
+                <div class="feature">
+                    <div class="feature-icon">
+                        <img src="images/icon-send.svg" alt="Fast Delivery">
+                    </div>
+                    <div class="feature-content">
+                        <h3>Fast Delivery</h3>
+                        <p>Get your products delivered to your doorstep in 2-3 business days.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Exclusive</h3>
+                    <p>Subscribe and get 10% off your first purchase</p>
+                    <div class="subscribe-form">
+                        <input type="email" placeholder="Enter your email" class="subscribe-input">
+                        <button class="subscribe-btn">Subscribe</button>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Support</h4>
+                    <ul>
+                        <li><a href="#">111 Bijoy sarani, Dhaka, DH 1515, Bangladesh.</a></li>
+                        <li><a href="#">exclusive@gmail.com</a></li>
+                        <li><a href="#">+88015-88888-9999</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Account</h4>
+                    <ul>
+                        <li><a href="#">My Account</a></li>
+                        <li><a href="#">Login / Register</a></li>
+                        <li><a href="#">Cart</a></li>
+                        <li><a href="#">Wishlist</a></li>
+                        <li><a href="#">Shop</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Link</h4>
+                    <ul>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms Of Use</a></li>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Download App</h4>
+                    <div class="app-downloads">
+                        <a href="#" class="app-download">
+                            <img src="images/AppStore.jpg" alt="Download on App Store">
+                        </a>
+                        <a href="#" class="app-download">
+                            <img src="images/AppStore.png" alt="Get it on Google Play">
+                        </a>
+                    </div>
+                    <div class="social-icons">
+                        <a href="https://www.instagram.com/_haxhim_ayyoob_/" class="social-icon">
+                            <img src="images/icon-instagram.svg" alt="Instagram">
+                        </a>
+                        <a href="https://www.instagram.com/_haxhim_ayyoob_/" class="social-icon">
+                            <img src="images/Icon-Facebook.svg" alt="Facebook">
+                        </a>
+                        <a href="https://www.instagram.com/_haxhim_ayyoob_/" class="social-icon">
+                            <img src="images/Icon-Twitter.svg" alt="Twitter">
+                        </a>
+                        <a href="https://www.instagram.com/_haxhim_ayyoob_/" class="social-icon">
+                            <img src="images/Icon-Linkedin.svg" alt="LinkedIn">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; Copyright Rimel 2022. All right reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        // Product List Page Specific Functionality
+        const products = [
+            {
+                id: 1,
+                name: "Breed Dry Dog Food",
+                image: "images/71RdoeXxtrL 1.jpg",
+                currentPrice: "$100",
+                originalPrice: "",
+                discount: "",
+                category: "pet",
+                rating: 5,
+                reviews: 35,
+                inStock: true,
+                onSale: false
+            },
+            {
+                id: 2,
+                name: "CANON EOS DSLR Camera",
+                image: "images/eos-250d-03-500x500 1.jpg",
+                currentPrice: "$360.00",
+                originalPrice: "$400.00",
+                discount: "-10%",
+                category: "electronics",
+                rating: 5,
+                reviews: 95,
+                inStock: true,
+                onSale: true
+            },
+            {
+                id: 3,
+                name: "ASUS FHD Gaming Laptop",
+                image: "images/ideapad-gaming-3i-01-500x500 1.jpg",
+                currentPrice: "$700.00",
+                originalPrice: "",
+                discount: "",
+                category: "gaming",
+                rating: 4,
+                reviews: 325,
+                inStock: true,
+                onSale: false
+            },
+            {
+                id: 4,
+                name: "Curology Product Set",
+                image: "images/curology-j7pKVQrTUsM-unsplash 1.jpg",
+                currentPrice: "$500.00",
+                originalPrice: "",
+                discount: "",
+                category: "accessories",
+                rating: 5,
+                reviews: 145,
+                inStock: true,
+                onSale: false
+            },
+            {
+                id: 5,
+                name: "Kids Electric Car",
+                image: "images/g27cq4-500x500 1.jpg",
+                currentPrice: "$960.00",
+                originalPrice: "$1160.00",
+                discount: "-17%",
+                category: "accessories",
+                rating: 4,
+                reviews: 65,
+                inStock: true,
+                onSale: true
+            },
+            {
+                id: 6,
+                name: "Jr. Zoom Soccer Cleats",
+                image: "images/g92-2-500x500 1.jpg",
+                currentPrice: "$1160.00",
+                originalPrice: "",
+                discount: "",
+                category: "clothing",
+                rating: 5,
+                reviews: 325,
+                inStock: true,
+                onSale: false
+            },
+            {
+                id: 7,
+                name: "GP11 Shooter USB Gaming Mouse",
+                image: "images/gammaxx-l240-argb-1-500x500 1.jpg",
+                currentPrice: "$550.00",
+                originalPrice: "",
+                discount: "",
+                category: "gaming",
+                rating: 4,
+                reviews: 325,
+                inStock: true,
+                onSale: false
+            },
+            {
+                id: 8,
+                name: "Quilted Satin Jacket",
+                image: "images/image 57.jpg",
+                currentPrice: "$660.00",
+                originalPrice: "",
+                discount: "",
+                category: "clothing",
+                rating: 5,
+                reviews: 325,
+                inStock: true,
+                onSale: false
+            }
+        ];
+
+        let filteredProducts = [...products];
+        let currentView = 'grid';
+        let currentPage = 1;
+        const productsPerPage = 6;
+
+        // Initialize the page
+        document.addEventListener('DOMContentLoaded', function() {
+            renderProducts();
+            setupEventListeners();
+            updateResultsCount();
+        });
+
+        function setupEventListeners() {
+            // View toggle
+            document.querySelectorAll('.view-btn').forEach(btn => {
+                btn.addEventListener('click', function() {
+                    document.querySelectorAll('.view-btn').forEach(b => b.classList.remove('active'));
+                    this.classList.add('active');
+                    currentView = this.dataset.view;
+                    renderProducts();
+                });
+            });
+
+            // Sort select
+            document.getElementById('sort-select').addEventListener('change', function() {
+                sortProducts(this.value);
+                renderProducts();
+            });
+
+            // Price range slider
+            const priceSlider = document.getElementById('price-range');
+            const priceValue = document.getElementById('price-value');
+            priceSlider.addEventListener('input', function() {
+                priceValue.textContent = '$' + this.value;
+                filterProducts();
+            });
+
+            // Filter checkboxes
+            document.querySelectorAll('.filter-option input').forEach(checkbox => {
+                checkbox.addEventListener('change', filterProducts);
+            });
+
+            // Clear filters
+            document.querySelector('.clear-filters-btn').addEventListener('click', clearFilters);
+
+            // Pagination
+            document.querySelectorAll('.pagination-btn').forEach(btn => {
+                if (!btn.disabled) {
+                    btn.addEventListener('click', function() {
+                        if (this.classList.contains('prev')) {
+                            if (currentPage > 1) {
+                                currentPage--;
+                                renderProducts();
+                            }
+                        } else if (this.classList.contains('next')) {
+                            if (currentPage < Math.ceil(filteredProducts.length / productsPerPage)) {
+                                currentPage++;
+                                renderProducts();
+                            }
+                        } else {
+                            currentPage = parseInt(this.textContent);
+                            renderProducts();
+                        }
+                        updatePagination();
+                    });
+                }
+            });
+        }
+
+        function filterProducts() {
+            const selectedCategories = Array.from(document.querySelectorAll('input[type="checkbox"][value]:checked'))
+                .map(cb => cb.value);
+            
+            const maxPrice = parseInt(document.getElementById('price-range').value);
+            const selectedRatings = Array.from(document.querySelectorAll('input[type="checkbox"][value]:checked'))
+                .filter(cb => ['5', '4', '3'].includes(cb.value))
+                .map(cb => parseInt(cb.value));
+            
+            const inStock = document.querySelector('input[value="in-stock"]').checked;
+            const onSale = document.querySelector('input[value="on-sale"]').checked;
+
+            filteredProducts = products.filter(product => {
+                // Category filter
+                if (selectedCategories.length > 0 && !selectedCategories.includes(product.category)) {
+                    return false;
+                }
+
+                // Price filter
+                const price = parseInt(product.currentPrice.replace('$', ''));
+                if (price > maxPrice) {
+                    return false;
+                }
+
+                // Rating filter
+                if (selectedRatings.length > 0 && !selectedRatings.includes(product.rating)) {
+                    return false;
+                }
+
+                // Availability filters
+                if (inStock && !product.inStock) {
+                    return false;
+                }
+                if (onSale && !product.onSale) {
+                    return false;
+                }
+
+                return true;
+            });
+
+            currentPage = 1;
+            renderProducts();
+            updateResultsCount();
+            updatePagination();
+        }
+
+        function sortProducts(sortBy) {
+            switch(sortBy) {
+                case 'price-low':
+                    filteredProducts.sort((a, b) => parseInt(a.currentPrice.replace('$', '')) - parseInt(b.currentPrice.replace('$', '')));
+                    break;
+                case 'price-high':
+                    filteredProducts.sort((a, b) => parseInt(b.currentPrice.replace('$', '')) - parseInt(a.currentPrice.replace('$', '')));
+                    break;
+                case 'rating':
+                    filteredProducts.sort((a, b) => b.rating - a.rating);
+                    break;
+                case 'newest':
+                    filteredProducts.sort((a, b) => b.id - a.id);
+                    break;
+                default:
+                    filteredProducts = [...products];
+            }
+        }
+
+        function clearFilters() {
+            document.querySelectorAll('.filter-option input').forEach(checkbox => {
+                checkbox.checked = false;
+            });
+            document.querySelector('input[value="electronics"]').checked = true;
+            document.querySelector('input[value="in-stock"]').checked = true;
+            document.getElementById('price-range').value = 500;
+            document.getElementById('price-value').textContent = '$500';
+            document.getElementById('sort-select').value = 'featured';
+            
+            filteredProducts = [...products];
+            currentPage = 1;
+            renderProducts();
+            updateResultsCount();
+            updatePagination();
+        }
+
+        function renderProducts() {
+            const container = document.getElementById('products-container');
+            const startIndex = (currentPage - 1) * productsPerPage;
+            const endIndex = startIndex + productsPerPage;
+            const pageProducts = filteredProducts.slice(startIndex, endIndex);
+
+            if (currentView === 'grid') {
+                container.className = 'products-grid';
+                container.innerHTML = pageProducts.map(product => createProductCard(product)).join('');
+            } else {
+                container.className = 'products-list';
+                container.innerHTML = pageProducts.map(product => createProductListItem(product)).join('');
+            }
+        }
+
+        function createProductCard(product) {
+            return `
+                <div class="product-card" onclick="navigateToProductDetails('${product.name}', '${product.image}', '${product.currentPrice}', '${product.originalPrice}', '${product.discount}', '${product.category}')">
+                    <div class="product-image">
+                        <img src="${product.image}" alt="${product.name}">
+                        <button class="wishlist-btn-product" onclick="event.stopPropagation()">
+                            <i class="fas fa-heart"></i>
+                        </button>
+                        <button class="quick-view-btn" onclick="event.stopPropagation()">
+                            <img src="images/Quick View.svg" alt="Quick View">
+                        </button>
+                        ${product.onSale ? `<div class="discount-badge">${product.discount}</div>` : ''}
+                    </div>
+                    <div class="product-info">
+                        <h3>${product.name}</h3>
+                        <div class="product-rating">
+                            <div class="stars">
+                                ${'<i class="fas fa-star"></i>'.repeat(product.rating)}
+                            </div>
+                            <span class="review-count">(${product.reviews})</span>
+                        </div>
+                        <div class="product-price">
+                            <span class="current-price">${product.currentPrice}</span>
+                            ${product.originalPrice ? `<span class="original-price">${product.originalPrice}</span>` : ''}
+                        </div>
+                        <button class="add-to-cart-btn" onclick="event.stopPropagation()">Add To Cart</button>
+                    </div>
+                </div>
+            `;
+        }
+
+        function createProductListItem(product) {
+            return `
+                <div class="product-list-item" onclick="navigateToProductDetails('${product.name}', '${product.image}', '${product.currentPrice}', '${product.originalPrice}', '${product.discount}', '${product.category}')">
+                    <div class="product-list-image">
+                        <img src="${product.image}" alt="${product.name}">
+                        ${product.onSale ? `<div class="discount-badge">${product.discount}</div>` : ''}
+                    </div>
+                    <div class="product-list-info">
+                        <h3>${product.name}</h3>
+                        <div class="product-rating">
+                            <div class="stars">
+                                ${'<i class="fas fa-star"></i>'.repeat(product.rating)}
+                            </div>
+                            <span class="review-count">(${product.reviews})</span>
+                        </div>
+                        <p class="product-description">High-quality product with excellent features and durability.</p>
+                        <div class="product-price">
+                            <span class="current-price">${product.currentPrice}</span>
+                            ${product.originalPrice ? `<span class="original-price">${product.originalPrice}</span>` : ''}
+                        </div>
+                    </div>
+                    <div class="product-list-actions">
+                        <button class="add-to-cart-btn" onclick="event.stopPropagation()">Add To Cart</button>
+                        <button class="wishlist-btn-product" onclick="event.stopPropagation()">
+                            <i class="fas fa-heart"></i>
+                        </button>
+                        <button class="quick-view-btn" onclick="event.stopPropagation()">
+                            <img src="images/Quick View.svg" alt="Quick View">
+                        </button>
+                    </div>
+                </div>
+            `;
+        }
+
+        function updateResultsCount() {
+            document.getElementById('results-count').textContent = filteredProducts.length;
+        }
+
+        function updatePagination() {
+            const totalPages = Math.ceil(filteredProducts.length / productsPerPage);
+            const paginationNumbers = document.querySelector('.pagination-numbers');
+            
+            // Update page numbers
+            let pageNumbersHTML = '';
+            for (let i = 1; i <= totalPages; i++) {
+                if (i === 1 || i === totalPages || (i >= currentPage - 1 && i <= currentPage + 1)) {
+                    pageNumbersHTML += `<button class="pagination-btn ${i === currentPage ? 'active' : ''}">${i}</button>`;
+                } else if (i === currentPage - 2 || i === currentPage + 2) {
+                    pageNumbersHTML += '<span class="pagination-dots">...</span>';
+                }
+            }
+            paginationNumbers.innerHTML = pageNumbersHTML;
+
+            // Update prev/next buttons
+            document.querySelector('.pagination-btn.prev').disabled = currentPage === 1;
+            document.querySelector('.pagination-btn.next').disabled = currentPage === totalPages;
+
+            // Reattach event listeners to new page number buttons
+            document.querySelectorAll('.pagination-numbers .pagination-btn').forEach(btn => {
+                btn.addEventListener('click', function() {
+                    currentPage = parseInt(this.textContent);
+                    renderProducts();
+                    updatePagination();
+                });
+            });
+        }
+    </script>
+</body>
+</html>

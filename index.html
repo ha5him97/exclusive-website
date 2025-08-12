@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exclusive - Premium Electronics & More</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    
+
+    <!-- Summer Sale Banner -->
+    <div class="summer-sale-banner">
+        <p>Summer Sale For All Swim Suits And Free Express Delivery - OFF 50%! <a href="#" class="shop-now-link">Shop Now</a></p>
+    </div>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <h1>Exclusive</h1>
+                </div>
+                
+                <nav class="nav-menu">
+                    <ul>
+                        <li><a href="#" class="active">Home</a></li>
+                        <li><a href="product-list.html">Products</a></li>
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Sign Up</a></li>
+                    </ul>
+                </nav>
+
+                <div class="header-actions">
+                    <div class="search-container">
+                        <input type="text" placeholder="What are you looking for?" class="search-input">
+                        <button class="search-btn">
+                            <i class="fas fa-search"></i>
+                        </button>
+                    </div>
+                    <button class="wishlist-btn">
+                        <i class="fas fa-heart"></i>
+                    </button>
+                    <button class="cart-btn">
+                        <i class="fas fa-shopping-cart"></i>
+                        <span class="cart-count">0</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <div class="apple-logo">
+                        <img src="images/1200px-Apple_gray_logo 1.svg" alt="Apple Logo">
+                    </div>
+                    <h2>iPhone 14 Series</h2>
+                    <div class="voucher-badge">
+                        <span>Up to 10% off Voucher</span>
+                    </div>
+                    <button class="shop-now-btn">
+                        Shop Now <i class="fas fa-arrow-right"></i>
+                    </button>
+                </div>
+                <div class="hero-image">
+                    <img src="images/hero_endframe__cvklg0xk3w6e_large 2.jpg" alt="iPhone 14 Pro">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Categories Section -->
+    <section class="categories-section">
+        <div class="container">
+            <div class="section-header">
+                <div class="red-bar"></div>
+                <h2>Browse By Category</h2>
+            </div>
+            <div class="categories-grid">
+                <div class="category-card">
+                    <div class="category-icon">
+                        <img src="images/Category-CellPhone.svg" alt="Phones">
+                    </div>
+                    <span>Phones</span>
+                </div>
+                <div class="category-card">
+                    <div class="category-icon">
+                        <img src="images/Category-Computer.svg" alt="Computers">
+                    </div>
+                    <span>Computers</span>
+                </div>
+                <div class="category-card">
+                    <div class="category-icon">
+                        <img src="images/Category-SmartWatch.svg" alt="SmartWatch">
+                    </div>
+                    <span>SmartWatch</span>
+                </div>
+                <div class="category-card">
+                    <div class="category-icon">
+                        <img src="images/Category-Headphone.svg" alt="HeadPhones">
+                    </div>
+                    <span>HeadPhones</span>
+                </div>
+                <div class="category-card">
+                    <div class="category-icon">
+                        <img src="images/Category-Gamepad.svg" alt="Gaming">
+                    </div>
+                    <span>Gaming</span>
+                </div>
+                <div class="category-card">
+                    <div class="category-icon">
+                        <img src="images/Category-Computer (1).svg" alt="Camera">
+                    </div>
+                    <span>Camera</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section class="products-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Best Selling Products</h2>
+                <a href="product-details.html" class="view-all-btn">View All Products</a>
+            </div>
+            <div class="products-grid">
+                <!-- Product 1 -->
+                <div class="product-card" onclick="navigateToProductDetails('Breed Dry Dog Food', 'images/71RdoeXxtrL 1.jpg', '$100', '', '', 'pet')">
+                    <div class="product-image">
+                        <img src="images/71RdoeXxtrL 1.jpg" alt="Breed Dry Dog Food">
+                        <button class="wishlist-btn-product" onclick="event.stopPropagation()">
+                            <i class="fas fa-heart"></i>
+                        </button>
+                        <button class="quick-view-btn" onclick="event.stopPropagation()">
+                            <img src="images/Quick View.svg" alt="Quick View">
+                        </button>
+                    </div>
+                    <div class="product-info">
+                        <h3>Breed Dry Dog Food</h3>
+                        <div class="product-rating">
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <span class="review-count">(35)</span>
+                        </div>
+                        <div class="product-price">
+                            <span class="current-price">$100</span>
+                        </div>
+                        <button class="add-to-cart-btn" onclick="event.stopPropagation()">Add To Cart</button>
+                    </div>
+                </div>
+
+                <!-- Product 2 -->
+                <div class="product-card" onclick="navigateToProductDetails('CANON EOS DSLR Camera', 'images/eos-250d-03-500x500 1.jpg', '$360', '', '', 'camera')">
+                    <div class="product-image">
+                        <img src="images/eos-250d-03-500x500 1.jpg" alt="CANON EOS DSLR Camera">
+                        <button class="wishlist-btn-product" onclick="event.stopPropagation()">
+                            <i class="fas fa-heart"></i>
+                        </button>
+                        <button class="quick-view-btn" onclick="event.stopPropagation()">
+                            <img src="images/Quick View.svg" alt="Quick View">
+                        </button>
+                    </div>
+                    <div class="product-info">
+                        <h3>CANON EOS DSLR Camera</h3>
+                        <div class="product-rating">
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <span class="review-count">(95)</span>
+                        </div>
+                        <div class="product-price">
+                            <span class="current-price">$360</span>
+                        </div>
+                        <button class="add-to-cart-btn" onclick="event.stopPropagation()">Add To Cart</button>
+                    </div>
+                </div>
+
+                <!-- Product 3 -->
+                <div class="product-card" onclick="navigateToProductDetails('ASUS FHD Gaming Laptop', 'images/ideapad-gaming-3i-01-500x500 1.jpg', '$700', '', '', 'computer')">
+                    <div class="product-image">
+                        <img src="images/ideapad-gaming-3i-01-500x500 1.jpg" alt="ASUS FHD Gaming Laptop">
+                        <button class="wishlist-btn-product" onclick="event.stopPropagation()">
+                            <i class="fas fa-heart"></i>
+                        </button>
+                        <button class="quick-view-btn" onclick="event.stopPropagation()">
+                            <img src="images/Quick View.svg" alt="Quick View">
+                        </button>
+                    </div>
+                    <div class="product-info">
+                        <h3>ASUS FHD Gaming Laptop</h3>
+                        <div class="product-rating">
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <span class="review-count">(325)</span>
+                        </div>
+                        <div class="product-price">
+                            <span class="current-price">$700</span>
+                        </div>
+                        <button class="add-to-cart-btn" onclick="event.stopPropagation()">Add To Cart</button>
+                    </div>
+                </div>
+
+                <!-- Product 4 -->
+                <div class="product-card" onclick="navigateToProductDetails('Curology Product Set', 'images/curology-j7pKVQrTUsM-unsplash 1.jpg', '$500', '', '', 'beauty')">
+                    <div class="product-image">
+                        <img src="images/curology-j7pKVQrTUsM-unsplash 1.jpg" alt="Curology Product Set">
+                        <button class="wishlist-btn-product" onclick="event.stopPropagation()">
+                            <i class="fas fa-heart"></i>
+                        </button>
+                        <button class="quick-view-btn" onclick="event.stopPropagation()">
+                            <img src="images/Quick View.svg" alt="Quick View">
+                        </button>
+                    </div>
+                    <div class="product-info">
+                        <h3>Curology Product Set</h3>
+                        <div class="product-rating">
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <span class="review-count">(145)</span>
+                        </div>
+                        <div class="product-price">
+                            <span class="current-price">$500</span>
+                        </div>
+                        <button class="add-to-cart-btn" onclick="event.stopPropagation()">Add To Cart</button>
+                    </div>
+                </div>
+
+                <!-- Product 5 -->
+                <div class="product-card" onclick="navigateToProductDetails('Kids Electric Car', 'images/ak-900-01-500x500 1.jpg', '$960', '', '', 'toy')">
+                    <div class="product-image">
+                        <img src="images/ak-900-01-500x500 1.jpg" alt="Kids Electric Car">
+                        <div class="new-tag">NEW</div>
+                        <button class="wishlist-btn-product" onclick="event.stopPropagation()">
+                            <i class="fas fa-heart"></i>
+                        </button>
+                        <button class="quick-view-btn" onclick="event.stopPropagation()">
+                            <img src="images/Quick View.svg" alt="Quick View">
+                        </button>
+                    </div>
+                    <div class="product-info">
+                        <h3>Kids Electric Car</h3>
+                        <div class="product-rating">
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <span class="review-count">(65)</span>
+                        </div>
+                        <div class="product-price">
+                            <span class="current-price">$960</span>
+                        </div>
+                        <button class="add-to-cart-btn" onclick="event.stopPropagation()">Add To Cart</button>
+                    </div>
+                </div>
+
+                <!-- Product 6 -->
+                <div class="product-card" onclick="navigateToProductDetails('Jr. Zoom Soccer Cleats', 'images/g27cq4-500x500 1.jpg', '$116', '', '', 'sports')">
+                    <div class="product-image">
+                        <img src="images/g27cq4-500x500 1.jpg" alt="Jr. Zoom Soccer Cleats">
+                        <div class="new-tag">NEW</div>
+                        <button class="wishlist-btn-product" onclick="event.stopPropagation()">
+                            <i class="fas fa-heart"></i>
+                        </button>
+                        <button class="quick-view-btn" onclick="event.stopPropagation()">
+                            <img src="images/Quick View.svg" alt="Quick View">
+                        </button>
+                    </div>
+                    <div class="product-info">
+                        <h3>Jr. Zoom Soccer Cleats</h3>
+                        <div class="product-rating">
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <span class="review-count">(45)</span>
+                        </div>
+                        <div class="product-price">
+                            <span class="current-price">$116</span>
+                        </div>
+                        <button class="add-to-cart-btn" onclick="event.stopPropagation()">Add To Cart</button>
+                    </div>
+                </div>
+
+                <!-- Product 7 -->
+                <div class="product-card" onclick="navigateToProductDetails('GPII Shooter USB Gamepad', 'images/g92-2-500x500 1.jpg', '$120', '$160', '', 'gaming')">
+                    <div class="product-image">
+                        <img src="images/g92-2-500x500 1.jpg" alt="GPII Shooter USB Gamepad">
+                        <div class="new-tag">NEW</div>
+                        <button class="wishlist-btn-product" onclick="event.stopPropagation()">
+                            <i class="fas fa-heart"></i>
+                        </button>
+                        <button class="quick-view-btn" onclick="event.stopPropagation()">
+                            <img src="images/Quick View.svg" alt="Quick View">
+                        </button>
+                    </div>
+                    <div class="product-info">
+                        <h3>GPII Shooter USB Gamepad</h3>
+                        <div class="product-rating">
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <span class="review-count">(88)</span>
+                        </div>
+                        <div class="product-price">
+                            <span class="old-price">$160</span>
+                            <span class="current-price">$120</span>
+                        </div>
+                        <button class="add-to-cart-btn" onclick="event.stopPropagation()">Add To Cart</button>
+                    </div>
+                </div>
+
+                <!-- Product 8 -->
+                <div class="product-card" onclick="navigateToProductDetails('Quilted Satin Jacket', 'images/gammaxx-l240-argb-1-500x500 1.jpg', '$180', '', '', 'fashion')">
+                    <div class="product-image">
+                        <img src="images/gammaxx-l240-argb-1-500x500 1.jpg" alt="Quilted Satin Jacket">
+                        <button class="wishlist-btn-product" onclick="event.stopPropagation()">
+                            <i class="fas fa-heart"></i>
+                        </button>
+                        <button class="quick-view-btn" onclick="event.stopPropagation()">
+                            <img src="images/Quick View.svg" alt="Quick View">
+                        </button>
+                    </div>
+                    <div class="product-info">
+                        <h3>Quilted Satin Jacket</h3>
+                        <div class="product-rating">
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <span class="review-count">(78)</span>
+                        </div>
+                        <div class="product-price">
+                            <span class="current-price">$180</span>
+                        </div>
+                        <button class="add-to-cart-btn" onclick="event.stopPropagation()">Add To Cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features-section">
+        <div class="container">
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-truck"></i>
+                    </div>
+                    <h3>FREE AND FAST DELIVERY</h3>
+                    <p>Free delivery for all orders over $140</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-headset"></i>
+                    </div>
+                    <h3>24/7 CUSTOMER SERVICE</h3>
+                    <p>Friendly 24/7 customer support</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3>MONEY BACK GUARANTEE</h3>
+                    <p>We return money within 30 days</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Exclusive</h3>
+                    <h4>Subscribe</h4>
+                    <p>Get 10% off your first order</p>
+                    <div class="subscribe-form">
+                        <input type="email" placeholder="Enter your email" class="email-input">
+                        <button class="subscribe-btn">
+                            <i class="fas fa-arrow-right"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Support</h4>
+                    <p>111 Bijoy sarani, Dhaka, DH 1515, Bangladesh.</p>
+                    <p>exclusive@gmail.com</p>
+                    <p>+88015-88888-9999</p>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Account</h4>
+                    <ul>
+                        <li><a href="#">My Account</a></li>
+                        <li><a href="#">Login / Register</a></li>
+                        <li><a href="#">Cart</a></li>
+                        <li><a href="#">Wishlist</a></li>
+                        <li><a href="#">Shop</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Quick Link</h4>
+                    <ul>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms Of Use</a></li>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Download App</h4>
+                    <p>Save $3 with App New User Only</p>
+                    <div class="qr-codes">
+                        <img src="images/Qr Code.jpg" alt="QR Code" class="qr-code">
+                    </div>
+                    <div class="app-buttons">
+                        <a href="#" class="app-btn">
+                            <img src="images/AppStore.jpg" alt="App Store">
+                        </a>
+                        <a href="#" class="app-btn">
+                            <img src="images/AppStore.png" alt="Google Play">
+                        </a>
+                    </div>
+                    <div class="social-icons">
+                        <a href="https://www.instagram.com/_haxhim_ayyoob_/"><img src="images/Icon-Facebook.svg" alt="Facebook"></a>
+                        <a href="https://www.instagram.com/_haxhim_ayyoob_/"><img src="images/Icon-Twitter.svg" alt="Twitter"></a>
+                        <a href="https://www.instagram.com/_haxhim_ayyoob_/"><img src="images/icon-instagram.svg" alt="Instagram"></a>
+                        <a href="https://www.instagram.com/_haxhim_ayyoob_/"><img src="images/Icon-Linkedin.svg" alt="LinkedIn"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; Copyright Rimel 2022. All right reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

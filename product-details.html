@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Details - Exclusive Gaming</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Summer Sale Banner -->
+    <div class="summer-sale-banner">
+        <p>Summer Sale For All Swim Suits And Free Express Delivery - OFF 50%! <a href="#" class="shop-now-link">Shop Now</a></p>
+    </div>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <h1>Exclusive</h1>
+                </div>
+                
+                <nav class="nav-menu">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Sign Up</a></li>
+                    </ul>
+                </nav>
+
+                <div class="header-actions">
+                    <div class="search-container">
+                        <input type="text" placeholder="What are you looking for?" class="search-input">
+                        <button class="search-btn">
+                            <i class="fas fa-search"></i>
+                        </button>
+                    </div>
+                    <button class="wishlist-btn">
+                        <i class="fas fa-heart"></i>
+                    </button>
+                    <button class="cart-btn">
+                        <i class="fas fa-shopping-cart"></i>
+                        <span class="cart-count">0</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Breadcrumb Navigation -->
+    <section class="breadcrumb-section">
+        <div class="container">
+            <div class="breadcrumb-header">
+                <a href="index.html" class="back-to-home">
+                    <i class="fas fa-arrow-left"></i>
+                    Back to Home
+                </a>
+                <nav class="breadcrumb-nav">
+                    <a href="index.html">Home</a>
+                    <span class="separator">/</span>
+                    <a href="#">Gaming</a>
+                    <span class="separator">/</span>
+                    <span class="current">Havic HV G-92 Game</span>
+                </nav>
+            </div>
+        </div>
+    </section>
+
+    <!-- Product Details Section -->
+    <section class="product-details-section">
+        <div class="container">
+            <div class="product-details-content">
+                <!-- Product Images -->
+                <div class="product-images">
+                    <div class="main-image">
+                        <img src="images/hero_endframe__cvklg0xk3w6e_large 2.jpg" alt="PlayStation 5 DualSense Controller">
+                    </div>
+                    <div class="thumbnail-images">
+                        <div class="thumbnail active">
+                            <img src="images/hero_endframe__cvklg0xk3w6e_large 2.jpg" alt="Controller View 1">
+                        </div>
+                        <div class="thumbnail">
+                            <img src="images/g92-2-500x500 1.jpg" alt="Controller View 2">
+                        </div>
+                        <div class="thumbnail">
+                            <img src="images/g27cq4-500x500 1.jpg" alt="Controller View 3">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product Info -->
+                <div class="product-details-info">
+                    <h1 class="product-title">PlayStation 5 DualSense Controller</h1>
+                    
+                    <div class="product-rating">
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <span class="review-count">(325 reviews)</span>
+                    </div>
+
+                    <div class="product-price">
+                        <span class="old-price">$120</span>
+                        <span class="current-price">$98</span>
+                        <span class="discount-badge">-18%</span>
+                    </div>
+
+                    <div class="product-description">
+                        <p>Experience the next generation of gaming with the PlayStation 5 DualSense controller. Featuring haptic feedback, adaptive triggers, and a built-in microphone for an immersive gaming experience.</p>
+                    </div>
+
+                    <div class="product-options">
+                        <div class="option-group">
+                            <label>Color:</label>
+                            <div class="color-options">
+                                <button class="color-option active" data-color="white" style="background-color: white;"></button>
+                                <button class="color-option" data-color="black" style="background-color: black;"></button>
+                                <button class="color-option" data-color="red" style="background-color: #dc3545;"></button>
+                            </div>
+                        </div>
+                        
+                        <div class="option-group">
+                            <label>Quantity:</label>
+                            <div class="quantity-selector">
+                                <button class="qty-btn" onclick="decreaseQuantity()">-</button>
+                                <input type="number" value="1" min="1" max="10" class="qty-input">
+                                <button class="qty-btn" onclick="increaseQuantity()">+</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="product-actions">
+                        <button class="add-to-cart-btn-large">
+                            <i class="fas fa-shopping-cart"></i>
+                            Add to Cart
+                        </button>
+                        <button class="wishlist-btn-large">
+                            <i class="fas fa-heart"></i>
+                            Add to Wishlist
+                        </button>
+                    </div>
+
+                    <div class="product-features">
+                        <h3>Key Features:</h3>
+                        <ul>
+                            <li><i class="fas fa-check"></i> Haptic feedback technology</li>
+                            <li><i class="fas fa-check"></i> Adaptive triggers</li>
+                            <li><i class="fas fa-check"></i> Built-in microphone</li>
+                            <li><i class="fas fa-check"></i> USB-C charging</li>
+                            <li><i class="fas fa-check"></i> Bluetooth connectivity</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Related Items Section -->
+    <section class="related-items-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Related Items</h2>
+            </div>
+            <div class="related-items-grid">
+                <div class="related-item-card">
+                    <div class="item-image">
+                        <img src="images/g92-2-500x500 1.jpg" alt="HAVIT HV-G92 Gamepad">
+                        <div class="discount-tag">-40%</div>
+                        <button class="wishlist-btn-product">
+                            <i class="fas fa-heart"></i>
+                        </button>
+                        <button class="quick-view-btn">
+                            <img src="images/Quick View.svg" alt="Quick View">
+                        </button>
+                    </div>
+                    <div class="item-info">
+                        <h3>HAVIT HV-G92 Gamepad</h3>
+                        <div class="item-rating">
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <span class="review-count">(88)</span>
+                        </div>
+                        <div class="item-price">
+                            <span class="old-price">$160</span>
+                            <span class="current-price">$96</span>
+                        </div>
+                        <button class="add-to-cart-btn">Add To Cart</button>
+                    </div>
+                </div>
+
+                <div class="related-item-card">
+                    <div class="item-image">
+                        <img src="images/g27cq4-500x500 1.jpg" alt="Gaming Headset">
+                        <div class="discount-tag">-35%</div>
+                        <button class="wishlist-btn-product">
+                            <i class="fas fa-heart"></i>
+                        </button>
+                        <button class="quick-view-btn">
+                            <img src="images/Quick View.svg" alt="Quick View">
+                        </button>
+                    </div>
+                    <div class="item-info">
+                        <h3>Premium Gaming Headset</h3>
+                        <div class="item-rating">
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <span class="review-count">(156)</span>
+                        </div>
+                        <div class="item-price">
+                            <span class="old-price">$200</span>
+                            <span class="current-price">$130</span>
+                        </div>
+                        <button class="add-to-cart-btn">Add To Cart</button>
+                    </div>
+                </div>
+
+                <div class="related-item-card">
+                    <div class="item-image">
+                        <img src="images/ak-900-01-500x500 1.jpg" alt="Gaming Keyboard">
+                        <div class="discount-tag">-30%</div>
+                        <button class="wishlist-btn-product">
+                            <i class="fas fa-heart"></i>
+                        </button>
+                        <button class="quick-view-btn">
+                            <img src="images/Quick View.svg" alt="Quick View">
+                        </button>
+                    </div>
+                    <div class="item-info">
+                        <h3>Mechanical Gaming Keyboard</h3>
+                        <div class="item-rating">
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <span class="review-count">(203)</span>
+                        </div>
+                        <div class="item-price">
+                            <span class="old-price">$150</span>
+                            <span class="current-price">$105</span>
+                        </div>
+                        <button class="add-to-cart-btn">Add To Cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Exclusive</h3>
+                    <h4>Subscribe</h4>
+                    <p>Get 10% off your first order</p>
+                    <div class="subscribe-form">
+                        <input type="email" placeholder="Enter your email" class="email-input">
+                        <button class="subscribe-btn">
+                            <i class="fas fa-arrow-right"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Support</h4>
+                    <p>111 Bijoy sarani, Dhaka, DH 1515, Bangladesh.</p>
+                    <p>exclusive@gmail.com</p>
+                    <p>+88015-88888-9999</p>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Account</h4>
+                    <ul>
+                        <li><a href="#">My Account</a></li>
+                        <li><a href="#">Login / Register</a></li>
+                        <li><a href="#">Cart</a></li>
+                        <li><a href="#">Wishlist</a></li>
+                        <li><a href="#">Shop</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Quick Link</h4>
+                    <ul>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms Of Use</a></li>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Download App</h4>
+                    <p>Save $3 with App New User Only</p>
+                    <div class="qr-codes">
+                        <img src="images/Qr Code.jpg" alt="QR Code" class="qr-code">
+                    </div>
+                    <div class="app-buttons">
+                        <a href="#" class="app-btn">
+                            <img src="images/AppStore.jpg" alt="App Store">
+                        </a>
+                        <a href="#" class="app-btn">
+                            <img src="images/AppStore.png" alt="Google Play">
+                        </a>
+                    </div>
+                    <div class="social-icons">
+                        <a href="#"><img src="images/Icon-Facebook.svg" alt="Facebook"></a>
+                        <a href="#"><img src="images/Icon-Twitter.svg" alt="Twitter"></a>
+                        <a href="#"><img src="images/icon-instagram.svg" alt="Instagram"></a>
+                        <a href="#"><img src="images/Icon-Linkedin.svg" alt="LinkedIn"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; Copyright Rimel 2022. All right reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        // Load product details from localStorage
+        function loadProductDetails() {
+            const productData = JSON.parse(localStorage.getItem('selectedProduct'));
+            
+            if (productData) {
+                // Update product title
+                const titleElement = document.querySelector('.product-title');
+                if (titleElement) {
+                    titleElement.textContent = productData.name;
+                }
+                
+                // Update main image
+                const mainImage = document.querySelector('.main-image img');
+                if (mainImage) {
+                    mainImage.src = productData.image;
+                    mainImage.alt = productData.name;
+                }
+                
+                // Update first thumbnail
+                const firstThumbnail = document.querySelector('.thumbnail img');
+                if (firstThumbnail) {
+                    firstThumbnail.src = productData.image;
+                    firstThumbnail.alt = productData.name;
+                }
+                
+                // Update breadcrumb
+                const breadcrumbCurrent = document.querySelector('.breadcrumb-nav .current');
+                if (breadcrumbCurrent) {
+                    breadcrumbCurrent.textContent = productData.name;
+                }
+                
+                // Update category in breadcrumb
+                const categoryLink = document.querySelector('.breadcrumb-nav a[href="#"]');
+                if (categoryLink && productData.category) {
+                    categoryLink.textContent = productData.category.charAt(0).toUpperCase() + productData.category.slice(1);
+                }
+                
+                // Update price if available
+                if (productData.currentPrice) {
+                    const priceElement = document.querySelector('.product-price .current-price');
+                    if (priceElement) {
+                        priceElement.textContent = productData.currentPrice;
+                    }
+                }
+                
+                // Update discount badge if available
+                if (productData.discount) {
+                    const discountElement = document.querySelector('.discount-badge');
+                    if (discountElement) {
+                        discountElement.textContent = productData.discount;
+                        discountElement.style.display = 'block';
+                    }
+                }
+            }
+        }
+
+        // Load product details when page loads
+        document.addEventListener('DOMContentLoaded', loadProductDetails);
+
+        // Product details page specific functionality
+        function decreaseQuantity() {
+            const input = document.querySelector('.qty-input');
+            if (input.value > 1) {
+                input.value = parseInt(input.value) - 1;
+            }
+        }
+
+        function increaseQuantity() {
+            const input = document.querySelector('.qty-input');
+            if (input.value < 10) {
+                input.value = parseInt(input.value) + 1;
+            }
+        }
+
+        // Color selection
+        document.querySelectorAll('.color-option').forEach(option => {
+            option.addEventListener('click', function() {
+                document.querySelectorAll('.color-option').forEach(opt => opt.classList.remove('active'));
+                this.classList.add('active');
+            });
+        });
+
+        // Thumbnail selection
+        document.querySelectorAll('.thumbnail').forEach(thumb => {
+            thumb.addEventListener('click', function() {
+                document.querySelectorAll('.thumbnail').forEach(t => t.classList.remove('active'));
+                this.classList.add('active');
+                
+                // Update main image
+                const mainImage = document.querySelector('.main-image img');
+                mainImage.src = this.querySelector('img').src;
+            });
+        });
+    </script>
+</body>
+</html>
